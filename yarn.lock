@@ -18,6 +18,11 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@react-native-community/viewpager@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@react-native-community/viewpager/-/viewpager-4.2.2.tgz#e05d618829c589284326896c806200af90ae0986"
+  integrity sha512-XBAO/9gV0pb6VAqbaobdJp6slTgmf8TOAnIbERO1pKjIXoj2OrKYcma2VPB/02wzEzu7TE8jcbt3u6BT4fpXxA==
+
 abab@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.0.tgz#aba0ab4c5eee2d4c79d3487d85450fb2376ebb0f"
@@ -5456,11 +5461,11 @@ react-native-tab-view@^0.0.77:
   dependencies:
     prop-types "^15.6.0"
 
-react-native-tab-view@^1.0.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-1.2.0.tgz#0cc26a1c8e49b6c0d58a30363dbbe43954907c31"
-  integrity sha512-lpiWi3dog86Fu/W60DU12RKrFv3XuTv0lHMC56t2jlDqxLfVzG9ufV7li6Afl2S2ZicNU1Bob8WPgxVZc8egAA==
+"react-native-tab-view@git+https://github.com/MatheusSfalsin/react-native-tab-view.git#fix/1.4.1":
+  version "1.4.1"
+  resolved "git+https://github.com/MatheusSfalsin/react-native-tab-view.git#6098cd05b07cbae3c2d7ba208d0cb157b8dea530"
   dependencies:
+    "@react-native-community/viewpager" "^4.2.2"
     prop-types "^15.6.1"
 
 react-native-vector-icons@^4.2.0:
@@ -5551,15 +5556,14 @@ react-navigation-stack@0.7.0:
   resolved "https://registry.yarnpkg.com/react-navigation-stack/-/react-navigation-stack-0.7.0.tgz#0b2f139ee1cba953037ef51353df992ec6c74fa2"
   integrity sha512-3Tbb/SsustBrM9R/qaI6XuOfyqYMVbwkeHFC8NbU890vB0aKZvjAtioWLZ18e/4LgbiOCmoTdp37z3gkGDyNDQ==
 
-react-navigation-tabs@0.8.4:
+"react-navigation-tabs@git+https://github.com/MatheusSfalsin/tabs.git#fix/0.8.4":
   version "0.8.4"
-  resolved "https://registry.yarnpkg.com/react-navigation-tabs/-/react-navigation-tabs-0.8.4.tgz#aa767f28b899f13c99f2b034b4a665f8cf0a5737"
-  integrity sha512-CbS3xIVJVtpu+AYslv0PMLmjddJFVtU3XAhSJ9XnMrKLUJNmnQdW/L0w/Gp5qcBEF9h6bgsY3CoTtp7I6bqyOQ==
+  resolved "git+https://github.com/MatheusSfalsin/tabs.git#eead0527ad4285dbd375f64ceaf77075369d2b59"
   dependencies:
     hoist-non-react-statics "^2.5.0"
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
-    react-native-tab-view "^1.0.0"
+    react-native-tab-view "git+https://github.com/MatheusSfalsin/react-native-tab-view.git#fix/1.4.1"
 
 react-proxy@^1.1.7:
   version "1.1.8"
